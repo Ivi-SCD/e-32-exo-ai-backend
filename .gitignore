@@ -1,0 +1,6 @@
+.cursor
+.ipynb_checkpoints
+__pycache__
+nasenv
+venv
+.env
