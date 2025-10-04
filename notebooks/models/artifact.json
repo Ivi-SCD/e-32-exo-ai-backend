@@ -1,0 +1,155 @@
+{
+  "baseline_metrics": {
+    "roc_auc": 0.9811148240972802,
+    "pr_auc": 0.9702696466012951,
+    "balanced_accuracy": 0.9286950013923698,
+    "brier": 0.05278931235640112
+  },
+  "ensemble_metrics": {
+    "roc_auc": 0.982758748723661,
+    "pr_auc": 0.9730942100575947,
+    "brier": 0.051375627279854785
+  },
+  "best_threshold_baseline": {
+    "threshold": 0.3504931180534278,
+    "precision": 0.8501059322033898,
+    "recall": 0.9553571428571429,
+    "f1": 0.9485559583109023,
+    "strategy": "max_recall_precision>=0.85"
+  },
+  "best_threshold_ensemble": {
+    "threshold": 0.3633241996221124,
+    "precision": 0.850131926121372,
+    "recall": 0.9589285714285715,
+    "f1": 0.9461485509522665,
+    "strategy": "max_recall_precision>=0.85"
+  },
+  "feature_count": 65,
+  "top_importances": [
+    {
+      "feature": "transit_depth_ppm",
+      "importance_mean": 0.08994110718492346,
+      "importance_std": 0.005713076613888951
+    },
+    {
+      "feature": "stellar_mass_msun_was_imputed",
+      "importance_mean": 0.0671613663133098,
+      "importance_std": 0.004239562823334612
+    },
+    {
+      "feature": "dec_deg",
+      "importance_mean": 0.037573616018845714,
+      "importance_std": 0.0037280593998721195
+    },
+    {
+      "feature": "transit_depth_ppm_imp",
+      "importance_mean": 0.027985865724381664,
+      "importance_std": 0.0015149997824088052
+    },
+    {
+      "feature": "a_over_rstar",
+      "importance_mean": 0.015806831566548895,
+      "importance_std": 0.0017736810821277627
+    },
+    {
+      "feature": "snr_model",
+      "importance_mean": 0.01177856301531216,
+      "importance_std": 0.0016115553711648506
+    },
+    {
+      "feature": "snr_single_event",
+      "importance_mean": 0.01097762073027092,
+      "importance_std": 0.002550704863818914
+    },
+    {
+      "feature": "orbital_period_days",
+      "importance_mean": 0.010694935217903457,
+      "importance_std": 0.0018344331998993509
+    },
+    {
+      "feature": "ra_deg",
+      "importance_mean": 0.007561837455830422,
+      "importance_std": 0.0008325369633485318
+    },
+    {
+      "feature": "tansit_duration_hrs",
+      "importance_mean": 0.00718492343934043,
+      "importance_std": 0.0015239476079751105
+    },
+    {
+      "feature": "stellar_metallicity_dex",
+      "importance_mean": 0.0061484098939929566,
+      "importance_std": 0.0018169554957148447
+    },
+    {
+      "feature": "planet_insolation_earth_combined_was_imputed",
+      "importance_mean": 0.005842167255594855,
+      "importance_std": 0.00041876063214679363
+    },
+    {
+      "feature": "impact_parameter",
+      "importance_mean": 0.004334511189634904,
+      "importance_std": 0.0011550200868910678
+    },
+    {
+      "feature": "planet_eq_temp_k_combined",
+      "importance_mean": 0.004287396937573662,
+      "importance_std": 0.0012633298165175015
+    },
+    {
+      "feature": "snr_multi_event",
+      "importance_mean": 0.004263839811543035,
+      "importance_std": 0.0006360424028268682
+    },
+    {
+      "feature": "planet_radius_re_imp",
+      "importance_mean": 0.003392226148409916,
+      "importance_std": 0.0008241628119922779
+    },
+    {
+      "feature": "pm_dec_masyr",
+      "importance_mean": 0.0032744405182568046,
+      "importance_std": 0.0010558744325566622
+    },
+    {
+      "feature": "stellar_teff_k",
+      "importance_mean": 0.0029446407538280426,
+      "importance_std": 0.0007971224648145364
+    },
+    {
+      "feature": "stellar_density_cgs",
+      "importance_mean": 0.0024734982332155764,
+      "importance_std": 0.0010063608651728496
+    },
+    {
+      "feature": "depth_ratio_residual",
+      "importance_mean": 0.002426383981154312,
+      "importance_std": 0.001154299175500582
+    },
+    {
+      "feature": "pm_ra_masyr",
+      "importance_mean": 0.0023321554770318275,
+      "importance_std": 0.0008587856835598664
+    },
+    {
+      "feature": "planet_eq_temp_k_combined_was_imputed",
+      "importance_mean": 0.0022850412249705966,
+      "importance_std": 0.00040870086155235107
+    },
+    {
+      "feature": "stellar_radius_rsun_was_imputed",
+      "importance_mean": 0.002285041224970574,
+      "importance_std": 0.00031692871724556254
+    },
+    {
+      "feature": "transit_depth_ppm_was_imputed",
+      "importance_mean": 0.002120141342756221,
+      "importance_std": 0.000816042783306875
+    },
+    {
+      "feature": "planet_radius_re",
+      "importance_mean": 0.0020259128386337253,
+      "importance_std": 0.0010224986767590476
+    }
+  ]
+}

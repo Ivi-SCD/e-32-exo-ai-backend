@@ -1,0 +1,47 @@
+{
+  "best_strategy": "Enhanced Features",
+  "best_threshold": 0.5714465427548606,
+  "target_recall": 0.98,
+  "achieved_recall": 0.9803571428571428,
+  "achieved_precision": 0.8101328086571569,
+  "achieved_f1": 0.8871532453541611,
+  "all_results": {
+    "Original Ensemble": {
+      "threshold": 0.24597576559410433,
+      "recall": 0.9809523809523809,
+      "precision": 0.8046875,
+      "f1": 0.8841201716738197
+    },
+    "Cost-Sensitive": {
+      "threshold": 0.5671872640101437,
+      "recall": 0.9803571428571428,
+      "precision": 0.8073529411764706,
+      "f1": 0.885483870967742
+    },
+    "Enhanced Features": {
+      "threshold": 0.5714465427548606,
+      "recall": 0.9803571428571428,
+      "precision": 0.8101328086571569,
+      "f1": 0.887153245354161
+    },
+    "Advanced Ensemble": {
+      "threshold": 0.6897805459872557,
+      "recall": 0.9803571428571428,
+      "precision": 0.7975786924939468,
+      "f1": 0.8795727636849132
+    }
+  },
+  "cost_matrix": {
+    "tn": 0,
+    "fp": 1,
+    "fn": 50,
+    "tp": 0
+  },
+  "enhanced_features": [
+    "strong_transit_signal",
+    "in_habitable_zone",
+    "favorable_stellar_type",
+    "detection_friendly_period",
+    "recall_confidence_score"
+  ]
+}
