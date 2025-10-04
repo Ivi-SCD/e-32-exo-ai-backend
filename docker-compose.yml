@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: nasa_postgres
+    environment:
+      POSTGRES_DB: nasa_exoplanets
+      POSTGRES_USER: nasa_user
+      POSTGRES_PASSWORD: nasa_password
+      POSTGRES_INITDB_ARGS: "--encoding=UTF-8 --lc-collate=C --lc-ctype=C"
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U nasa_user -d nasa_exoplanets"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build: .
+    container_name: nasa_api
+    environment:
+      DATABASE_URL: postgresql://nasa_user:nasa_password@postgres:5432/nasa_exoplanets
+      API_HOST: 0.0.0.0
+      API_PORT: 8000
+      DEBUG: false
+      LOG_LEVEL: info
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+    volumes:
+      - ./notebooks/models:/app/notebooks/models
+      - ./notebooks/data:/app/notebooks/data
+
+volumes:
+  postgres_data:
+    driver: local
