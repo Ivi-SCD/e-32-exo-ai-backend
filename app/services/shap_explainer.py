@@ -149,8 +149,15 @@ class SimilarityCalculator:
         """
         Find most similar exoplanets to candidate with improved weighting
         """
-        # Prepare candidate features
-        candidate_vector = np.array([candidate_features.get(f, 0) for f in self.comparison_features])
+        # Prepare candidate features, handling None values
+        candidate_values = []
+        for f in self.comparison_features:
+            value = candidate_features.get(f, 0)
+            if value is None:
+                candidate_values.append(0)  # Use 0 for None values
+            else:
+                candidate_values.append(value)
+        candidate_vector = np.array(candidate_values)
         
         # Normalize candidate features
         candidate_normalized = (candidate_vector - self.feature_means.values) / (self.feature_stds.values + 1e-8)

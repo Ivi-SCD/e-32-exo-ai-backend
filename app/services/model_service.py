@@ -80,7 +80,7 @@ class ModelService:
     def preprocess_input(self, user_input, all_features):
         x = {}
         for k in all_features:
-            if k in user_input:
+            if k in user_input and user_input[k] is not None:
                 if k == "transit_depth":
                     x[k] = float(user_input[k]) * 1e4
                 else:
