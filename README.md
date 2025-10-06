@@ -418,14 +418,29 @@ Access interactive documentation:
 - Follow **PEP 8** standard
 - Use **conventional commits**
 
-
 ## 👥 Team
 
 **Developed for NASA Hackathon - Team E-32** 🏆
 
-- **Ivisson Alves** - AI Engineer & Backend Developer
-  - LinkedIn: [@ivi-aiengineer](https://www.linkedin.com/in/ivi-aiengineer/)
-  - Email: ivipnascimento@hotmail.com
+**Ivisson Alves** – AI Engineer & Backend Developer  
+LinkedIn: [@ivi-aiengineer](https://www.linkedin.com/in/ivi-aiengineer)  
+Email: ivipnascimento@hotmail.com
+
+**Daniela Menezes** – Researcher  
+LinkedIn: [@daniela-menezes-43478624a](https://www.linkedin.com/in/daniela-menezes-43478624a/)  
+Email: academicosdani@gmail.com
+
+**Edson Mota** – Data Scientist  
+LinkedIn: [@emvalencaf](https://www.linkedin.com/in/emvalencaf/)  
+Email: edsonmvf@gmail.com
+
+**Hugo Henrique** – Designer  
+LinkedIn: [@hugo-henrique-a-b935361bb](https://www.linkedin.com/in/hugo-henrique-a-b935361bb/)  
+Email: hugohenrixoto@gmail.com
+
+**Marcos Bueno** – Software Engineer  
+LinkedIn: [@marcos-bueno-estevam](https://www.linkedin.com/in/marcos-bueno-estevam/)  
+Email: mvbueno07@gmail.com
 
 ## 🔗 Useful Links
 
